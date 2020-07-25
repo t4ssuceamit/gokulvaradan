@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/gokulvaradan/static/css/main.dfa5e710.chunk.css",
+    "main.js": "/gokulvaradan/static/js/main.32245a8d.chunk.js",
+    "main.js.map": "/gokulvaradan/static/js/main.32245a8d.chunk.js.map",
+    "runtime-main.js": "/gokulvaradan/static/js/runtime-main.be6c11f1.js",
+    "runtime-main.js.map": "/gokulvaradan/static/js/runtime-main.be6c11f1.js.map",
+    "static/js/2.3fab5595.chunk.js": "/gokulvaradan/static/js/2.3fab5595.chunk.js",
+    "static/js/2.3fab5595.chunk.js.map": "/gokulvaradan/static/js/2.3fab5595.chunk.js.map",
+    "index.html": "/gokulvaradan/index.html",
+    "precache-manifest.4c8c1ae3cd5421959aa4a833f7abf4b9.js": "/gokulvaradan/precache-manifest.4c8c1ae3cd5421959aa4a833f7abf4b9.js",
+    "service-worker.js": "/gokulvaradan/service-worker.js",
+    "static/css/main.dfa5e710.chunk.css.map": "/gokulvaradan/static/css/main.dfa5e710.chunk.css.map",
+    "static/js/2.3fab5595.chunk.js.LICENSE.txt": "/gokulvaradan/static/js/2.3fab5595.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.be6c11f1.js",
+    "static/js/2.3fab5595.chunk.js",
+    "static/css/main.dfa5e710.chunk.css",
+    "static/js/main.32245a8d.chunk.js"
+  ]
+}
