@@ -128,6 +128,14 @@ function checkValidServiceWorker(swUrl, config) {
     });
 }
 
+// let deferredPrompt;
+
+// window.addEventListener('beforeinstallprompt', (e) => {
+//   e.preventDefault();
+//   deferredPrompt = e;
+//   showInstallPromotion();
+// });
+
 export function unregister() {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.ready
