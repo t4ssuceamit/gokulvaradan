@@ -6051,6 +6051,18 @@ video {
   font-family: Poppins;
 }
 
+.font-light {
+  font-family: FuturaPTLight;
+}
+
+.font-medium {
+  font-family: FuturaPTMedium;
+}
+
+.font-heavy {
+  font-family: FuturaPTBold;
+}
+
 .font-hairline {
   font-weight: 100;
 }
@@ -14346,6 +14358,10 @@ video {
   transition-delay: 1000ms;
 }
 
+/* @import url('./Fonts/FuturaPTLight.otf.otf');
+@import url('./Fonts/FuturaPTMedium.otf');
+@import url('./Fonts/FuturaPTBold.otf.otf'); */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @media (min-width: 640px) {
@@ -19821,6 +19837,18 @@ video {
 
   .sm\:font-default {
     font-family: Poppins;
+  }
+
+  .sm\:font-light {
+    font-family: FuturaPTLight;
+  }
+
+  .sm\:font-medium {
+    font-family: FuturaPTMedium;
+  }
+
+  .sm\:font-heavy {
+    font-family: FuturaPTBold;
   }
 
   .sm\:font-hairline {
@@ -33594,6 +33622,18 @@ video {
     font-family: Poppins;
   }
 
+  .md\:font-light {
+    font-family: FuturaPTLight;
+  }
+
+  .md\:font-medium {
+    font-family: FuturaPTMedium;
+  }
+
+  .md\:font-heavy {
+    font-family: FuturaPTBold;
+  }
+
   .md\:font-hairline {
     font-weight: 100;
   }
@@ -47365,6 +47405,18 @@ video {
     font-family: Poppins;
   }
 
+  .lg\:font-light {
+    font-family: FuturaPTLight;
+  }
+
+  .lg\:font-medium {
+    font-family: FuturaPTMedium;
+  }
+
+  .lg\:font-heavy {
+    font-family: FuturaPTBold;
+  }
+
   .lg\:font-hairline {
     font-weight: 100;
   }
@@ -61134,6 +61186,18 @@ video {
 
   .xl\:font-default {
     font-family: Poppins;
+  }
+
+  .xl\:font-light {
+    font-family: FuturaPTLight;
+  }
+
+  .xl\:font-medium {
+    font-family: FuturaPTMedium;
+  }
+
+  .xl\:font-heavy {
+    font-family: FuturaPTBold;
   }
 
   .xl\:font-hairline {

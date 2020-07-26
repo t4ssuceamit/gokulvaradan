@@ -10,6 +10,7 @@
     "framer-motion": "^2.1.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-rough-notation": "^0.1.1",
     "react-scripts": "3.4.1",
     "rough-notation": "^0.4.0"
   },

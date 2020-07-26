@@ -52,8 +52,8 @@ module.exports = {
         900: '#7b341e',
       },
       yellow: {
-        100: '#fffff0',
-        200: '#fefcbf',
+        100: '#FFF313',
+        200: '#FFE013',
         300: '#faf089',
         400: '#f6e05e',
         500: '#ecc94b',
@@ -276,7 +276,7 @@ module.exports = {
       auto: 'auto',
       ...theme('spacing'),
       full: '100%',
-      screen: '100vh',
+      screen: '95vh',
     }),
     inset: {
       '0': '0',

@@ -3,7 +3,16 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        default: ['Poppins']
+        default: ['Poppins'],
+        light: ['FuturaPTLight'],
+        medium: ['FuturaPTMedium'],
+        heavy: ['FuturaPTBold'],
+      }, 
+      color: {
+        yellow: {
+          100: "#FFF200",
+          200: "#FFEE00"
+        }
       }
     },
   },
