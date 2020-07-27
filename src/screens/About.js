@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className="grid grid-cols-2 bg-gray-100 py-32" id="#about">
+        <div className="grid grid-cols-2 bg-yellow-100 py-32" id="#about">
             <div className="flex items-center justify-center col-span-1 rounded-md">
                 <div className="w-64">
                 <img className="rounded-lg hover:shadow-md" src={require('../statics/Gokul.png')} alt="gokul-varadan-profile" />

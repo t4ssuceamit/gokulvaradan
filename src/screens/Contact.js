@@ -7,13 +7,13 @@ const Contact = () => {
             <div className="flex flex-1 flex-col justify-center items-center mb-10">
                 <h1 className="text-4xl font-bold mb-5 text-white">Let's Get in Touch</h1>
                 <form action="#" method="post" className="flex flex-col justify-center items-center mb-5">
-                <input className="w-64 p-2 h-10 rounded-lg mb-4" type="text" placeholder="email..."/>
-                <button type="submit" className="bg-yellow-400 rounded-lg hover:bg-yellow-600 hover:shadow-lg text-black font-bold py-2 px-4 rounded">Send</button>
+                    <input className="w-64 p-6 h-10 outline-none border-gray-400 focus:border-indigo-500 rounded-lg mb-4" type="text" placeholder="email..."/>
+                    <button type="submit" className="bg-yellow-400 rounded-lg hover:bg-yellow-600 hover:shadow-lg text-black font-bold py-2 px-4">Send</button>
                 </form>
                 <p className="text-white text-lg">You can also Contact me on:{' '}
-                <RoughNotation variants="underline" show="true">
-                <a className="font-bold" href="mailto:gokulvaradan2202@gmail.com">gokulvaradan2202@gmail.com</a>
-                </RoughNotation> 
+                {/* <RoughNotation variants="underline" show="true"> */}
+                    <a className="font-bold" href="mailto:gokulvaradan2202@gmail.com">gokulvaradan2202@gmail.com</a>
+                {/* </RoughNotation>  */}
                 </p>
             </div>
             <div className="flex flex-1 w-screen flex-row justify-between border-t-2 h-20">

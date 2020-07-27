@@ -14,7 +14,7 @@ function Header(){
         }
     }, [])
     return (
-        <div className="flex flex-1 h-20 flex-row items-center bg-white transition-all duration-500" id="header">
+        <div className="flex flex-1 h-20 flex-row items-center z-40 bg-white transition-all duration-500" id="header">
             <div className="container mx-auto flex flex-row items-center justify-between">
                 <a href="#">
                     <HeaderLogo  width="50" height="50" viewBox="0 0 90 50" />
