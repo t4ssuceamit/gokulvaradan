@@ -7,9 +7,9 @@ function Header(){
         window.onscroll = function() {scrollFunction()};
         function scrollFunction() {
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            document.getElementById("header").classList.add('shadow-sm')
+            document.getElementById("header").classList.add('shadow-md')
         } else {
-            document.getElementById("header").classList.remove('shadow-sm')
+            document.getElementById("header").classList.remove('shadow-md')
         }
         }
     }, [])

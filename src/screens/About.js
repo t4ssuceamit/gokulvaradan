@@ -1,11 +1,19 @@
 import React from 'react';
 
+const images = [
+    require('../statics/Gokul.png'),
+    require('../statics/Gokul-Stage.png'),
+  ];
+
 const About = () => {
     return (
         <div className="grid grid-cols-2 bg-yellow-100 py-32" id="#about">
             <div className="flex items-center justify-center col-span-1 rounded-md">
-                <div className="w-64">
-                <img className="rounded-lg hover:shadow-md" src={require('../statics/Gokul.png')} alt="gokul-varadan-profile" />
+                <div className="w-1/2">
+                    <img 
+                        className="rounded-lg hover:shadow-md" 
+                        src={images[0]}
+                        alt="gokul-varadan-profile" />
                 </div>
             </div>
             <div className="col-span-1 flex flex-col items-start justify-center">

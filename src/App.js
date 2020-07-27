@@ -7,7 +7,7 @@ import Contact from './screens/Contact'
 
 function App() {
   return (
-    <div className='flex flex-col font-default overflow-x-hidden relative border-l-8 border-yellow-400' style={{scrollBehavior: 'smooth'}}>
+    <div className='flex flex-col font-default overflow-x-hidden text-gray-800 relative border-l-8 border-yellow-400 bg-gray-100' style={{scrollBehavior: 'smooth'}}>
       <div className="z-40 flex w-screen fixed">
       <Header />
       </div>
