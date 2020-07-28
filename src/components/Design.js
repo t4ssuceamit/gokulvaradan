@@ -71,7 +71,7 @@ function Design() {
                     <div className="col-span-2 flex  items-center justify-center bg-yellow-200 rounded-lg overflow-hidden ">
                         <img className="hover:scale-100" src={require("../statics/Give Life.png")} alt="give-life-ngo" />
                     </div>
-                    <div className="col-span-1 flex items-center justify-center bg-yellow-200 rounded-lg overflow-hidden ">
+                    <div className="col-span-1 flex items-center justify-center bg-white rounded-lg overflow-hidden ">
                         <video className="h-full object-cover" autoPlay muted loop>
                             <source src={require("../statics/Blue.mp4")} type="video/mp4" />
                         </video>

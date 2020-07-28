@@ -8,13 +8,14 @@ const images = [
 const About = () => {
     return (
         <div className="grid grid-cols-2 bg-yellow-100 py-32" id="#about">
-            <div className="flex items-center justify-center col-span-1 rounded-md">
-                <div className="w-1/2">
+            <div className="relative flex items-center justify-center col-span-1 rounded-md">
+                <div className="w-1/2 z-30">
                     <img 
                         className="rounded-lg hover:shadow-md" 
                         src={images[0]}
                         alt="gokul-varadan-profile" />
                 </div>
+                <div className="w-1/2 z-0 absolute h-full m-2 border-dashed rounded-lg border-2 border-yellow-300"></div>
             </div>
             <div className="col-span-1 flex flex-col items-start justify-center">
                 <h1 className="text-4xl font-bold mb-5">About</h1>    
