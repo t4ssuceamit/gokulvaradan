@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8f40493491a34c4eaf163b5d7b1aef92",
+    "revision": "3a05f65290cd437af1a0a420de4ff595",
     "url": "/gokulvaradan/index.html"
   },
   {
-    "revision": "ec9bb3d44eca291f6c02",
+    "revision": "1fcb988adc60b6aa4a05",
     "url": "/gokulvaradan/static/css/main.a2468ef0.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gokulvaradan/static/js/2.fa87bf8c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ec9bb3d44eca291f6c02",
-    "url": "/gokulvaradan/static/js/main.9d9a28e3.chunk.js"
+    "revision": "1fcb988adc60b6aa4a05",
+    "url": "/gokulvaradan/static/js/main.18a516a8.chunk.js"
   },
   {
     "revision": "1b39df1c5efb9e78c921",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gokulvaradan/static/media/Cubic Blocks.ab63afdf.png"
   },
   {
-    "revision": "b46b1e26bc1225890468e47c284c074b",
-    "url": "/gokulvaradan/static/media/Give Life.b46b1e26.png"
+    "revision": "94c2c799051aaf625cd813b9b6a584c4",
+    "url": "/gokulvaradan/static/media/Give Life.94c2c799.png"
   },
   {
     "revision": "b0aad8a3cd6bda25129ceaf4a23052c1",
