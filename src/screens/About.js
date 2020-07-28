@@ -7,7 +7,7 @@ const images = [
 
 const About = () => {
     return (
-        <div className="grid md:grid-cols-2 gap-2 bg-yellow-200 py-32" id="#about">
+        <div className="grid md:grid-cols-2 gap-2 bg-yellow-100 py-32" id="#about">
             <div className="relative flex items-center justify-center md:col-span-1 sm:mb-12 mb-0 rounded-md h-auto md:h-64 lg:h-auto">
                 <div className="w-1/2 z-30">
                     <img 
