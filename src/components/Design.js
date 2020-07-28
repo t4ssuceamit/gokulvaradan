@@ -72,9 +72,7 @@ function Design() {
                         <img className="hover:scale-100" src={require("../statics/Give Life.png")} alt="give-life-ngo" />
                     </div>
                     <div className="col-span-1 flex items-center justify-center bg-white rounded-lg overflow-hidden ">
-                        <video className="h-full object-cover" autoPlay muted loop>
-                            <source src={require("../statics/Blue.mp4")} type="video/mp4" />
-                        </video>
+                        <img className="h-full object-cover hover:scale-100" src={require("../statics/Perspective.png")} alt="cubic-blocks-book-cover" />
                     </div>
                 </div>
                 <div className="grid grid-cols-4 h-64 gap-6 row-span-1">
@@ -82,7 +80,9 @@ function Design() {
                         <img className="h-full object-cover hover:scale-100" src={require("../statics/Cubic Blocks.png")} alt="cubic-blocks-book-cover" />
                     </div>
                     <div className="col-span-1 bg-yellow-200 rounded-lg overflow-hidden ">
-                        <img className="h-full object-cover hover:scale-100" src={require("../statics/Perspective.png")} alt="cubic-blocks-book-cover" />
+                    <video className="h-full object-cover" autoPlay muted loop>
+                            <source src={require("../statics/Blue.mp4")} type="video/mp4" />
+                        </video>
                     </div>
                     <div className="col-span-2 flex items-center justify-center bg-yellow-200 rounded-lg overflow-hidden ">
                         <img  className="hover:scale-100" src={require("../statics/Green-Groceries.png")} alt="give-life-ngo" />
