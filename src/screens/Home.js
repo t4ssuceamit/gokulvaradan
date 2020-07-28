@@ -10,13 +10,13 @@ const Home = () => {
             animate={{ opacity: 1, y: 10 }}
             transition={{ ease: "easeOut", duration: 0.8}}
             className="flex flex-col justify-center items-center" >
-            <h1 className="text-4xl font-bold mb-2">I'm Gokul Varadan</h1>
+            <h1 className="sm:text-2xl text-2xl md:text-4xl font-bold mb-2">I'm Gokul Varadan</h1>
             <motion.div
             initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 10 }}
             transition={{ ease: "easeOut", duration: 1}}
             className="flex flex-col justify-center items-center" >
-            <p className="text-xl w-8/12 text-center">
+            <p className="md:text-xl text-lg w-4/5  md:w-8/12 text-center">
                 Hai, I'm Freelancer specialized in both{' '} 
                 <RoughNotation type="underline" show="true" color="yellow" multiline>
                 Design and Development{' '}

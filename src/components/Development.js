@@ -8,13 +8,13 @@ function Development() {
     animate={{ opacity: 1, y: 20 }}
     transition={{ ease: "easeOut", duration: 0.6}}
     className="flex flex-col justify-center items-center">
-            <p className="text-lg w-4/5 text-center">
+            <p className="text-lg md:text-xl w-4/5 text-center">
                 I'm full stack developer and UI/UX specialist. I'm very passionate about learning new thing and building 
                 new excellent softwares around us. I've experienced by working in project for individuals to small startups.
             </p>
             {/* fullstack */}
         <div class="w-9/12 px-5 py-16 mx-auto flex flex-wrap z-0 flex-col">
-            <div className="flex">
+            <div className="flex md:flex-row flex-col">
             <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
             <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
                 <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
@@ -34,7 +34,7 @@ function Development() {
                 </div>
             </div>
             </div>
-            <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div class="flex relative pb-20 sm:items-center md:w-2/3 ">
             <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
                 <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
             </div>
@@ -52,8 +52,8 @@ function Development() {
             </div>
             </div>
             </div>
-            <div className="flex">
-            <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div className="flex md:flex-row flex-col">
+            <div class="flex relative pb-20 sm:items-center md:w-2/3">
             <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
                 <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
             </div>
@@ -70,7 +70,7 @@ function Development() {
                 </div>
             </div>
             </div>
-            <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+            <div class="flex relative pb-10 sm:items-center md:w-2/3">
             <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
                 <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
             </div>
@@ -90,8 +90,8 @@ function Development() {
             </div>
             </div>
             </div>
-            <div className="flex">
-            <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+            <div className="flex md:flex-row flex-col">
+            <div class="flex relative pb-20 sm:items-center md:w-2/3">
             <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
                 <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
             </div>
@@ -115,7 +115,7 @@ function Development() {
                 </div>
             </div>
             </div>
-            <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+            <div class="flex relative pb-10 sm:items-center md:w-2/3">
             <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
                 <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
             </div>
@@ -134,27 +134,31 @@ function Development() {
             </div>
             </div>
         </div>
-        <div className="flex flex-col justify-center items-center w-9/12">
+        <div className="flex flex-col h-full justify-center items-center">
             <h1 className="text-3xl font-bold mb-6">Projects</h1>
-            <div className="grid grid-cols-3 gap-8 bg-grey-100 w-full h-64">
-                <div className="col-span-1 bg-yellow-300 rounded-lg overflow-hidden transition duration-500 ease-out hover:shadow-lg transform hover:scale-110">
-                    <div className="h-48 overflow-hidden">
-                        <img src={require("../statics/Blog.png")} alt="react-native-blog-app" />
+            <div className="grid lg:grid-cols-3 grid-row-3 gap-8 bg-grey-100 w-3/4 md:w-1/2 lg:w-3/4 h-full">
+                <a href="https://github.com/gokulcodes/blogin#react-native">
+                <div className="lg:col-span-1 row-span-1 bg-yellow-300 rounded-lg object-cover overflow-hidden transition duration-500 ease-out hover:shadow-lg transform hover:scale-110">
+                    <div className="h-auto object-cover">
+                        <img className="h-64 w-full" src={require("../statics/Blog.png")} alt="react-native-blog-app" />
                     </div>
                     <div className="flex flex-row justify-between items-center bg-yellow-400 w-full h-20">
+                        <div className="flex flex-row w-full h-full mt-5 justify-between items-center">
+                        <div className="flex items-center">
                         <div className="w-8 h-8 ml-5 mb-5 mr-2 rounded-full overflow-hidden">
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="28" height="28" rx="14" fill="url(#paint0_linear)"/>
-                            <path d="M14.572 19C15.454 19 16.182 18.748 16.784 18.23C17.386 17.712 17.68 17.054 17.68 16.284C17.68 15.318 17.26 14.576 16.406 14.044C16.994 13.554 17.288 12.924 17.288 12.154C17.288 11.412 17.008 10.796 16.434 10.306C15.86 9.802 15.16 9.55 14.306 9.55H9.7V19H14.572ZM14.558 15.038C15.132 15.038 15.594 15.5 15.594 16.102C15.594 16.704 15.132 17.166 14.558 17.166H11.702V15.038H14.558ZM14.278 11.398C14.824 11.398 15.216 11.79 15.216 12.336C15.216 12.406 15.216 12.448 15.202 12.476C15.146 12.966 14.768 13.288 14.278 13.288H11.702V11.398H14.278Z" fill="white"/>
-                            <defs>
-                            <linearGradient id="paint0_linear" x1="5" y1="2.5" x2="22.5" y2="25.5" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#FDAE66"/>
-                            <stop offset="1" stop-color="#FB7756"/>
-                            </linearGradient>
-                            </defs>
-                        </svg>
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="28" height="28" rx="14" fill="url(#paint0_linear)"/>
+                                <path d="M14.572 19C15.454 19 16.182 18.748 16.784 18.23C17.386 17.712 17.68 17.054 17.68 16.284C17.68 15.318 17.26 14.576 16.406 14.044C16.994 13.554 17.288 12.924 17.288 12.154C17.288 11.412 17.008 10.796 16.434 10.306C15.86 9.802 15.16 9.55 14.306 9.55H9.7V19H14.572ZM14.558 15.038C15.132 15.038 15.594 15.5 15.594 16.102C15.594 16.704 15.132 17.166 14.558 17.166H11.702V15.038H14.558ZM14.278 11.398C14.824 11.398 15.216 11.79 15.216 12.336C15.216 12.406 15.216 12.448 15.202 12.476C15.146 12.966 14.768 13.288 14.278 13.288H11.702V11.398H14.278Z" fill="white"/>
+                                <defs>
+                                <linearGradient id="paint0_linear" x1="5" y1="2.5" x2="22.5" y2="25.5" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FDAE66"/>
+                                <stop offset="1" stop-color="#FB7756"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>
                         </div>
                         <p className="mb-5">Blogin</p>
+                        </div>
                         <div className="flex justify-center items-center">
                             <div className="w-12 h-12 mr-5 mb-5 bg-white flex justify-center items-center rounded-full">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -170,17 +174,23 @@ function Development() {
                             </svg>
                             </div>
                         </div>
+                        </div>
                     </div>
                 </div>
-                <div className="col-span-1 bg-yellow-300 rounded-lg overflow-hidden transition duration-500 ease-out hover:shadow-lg transform hover:scale-110">
-                    <div className="h-48 overflow-hidden">
-                        <img src={require("../statics/dev-infomatte.jpg")} alt="dev-infomatte" />
+                </a> 
+                <a href="https://github.com/gokulcodes/infomatte#infomatte">
+                <div className="lg:col-span-1 row-span-1 bg-yellow-300 rounded-lg overflow-hidden transition duration-500 ease-out hover:shadow-lg transform hover:scale-110">
+                    <div className="h-auto object-cover">
+                        <img  className="h-64 w-full"  src={require("../statics/dev-infomatte.jpg")} alt="dev-infomatte" />
                     </div>
                     <div className="flex flex-row justify-between  items-center bg-yellow-400 w-full h-20">
+                    <div className="flex flex-row w-full h-full mt-5 justify-between items-center">
+                        <div className="flex items-center">
                         <div className="w-8 h-8 ml-5 mb-5 mr-2 rounded-full overflow-hidden">
                             <img src="https://avatars2.githubusercontent.com/u/60610891?s=460&u=ba9bbe6fddfbf4ce9a37cfc8bd40d7dde3cee537&v=4" alt="dev-infomatte" />
                         </div>
                         <p className="mb-5">Infomatte.in</p>
+                        </div>
                         <div className="flex justify-center items-center">
                             <div className="w-12 h-12 mr-5 mb-5 bg-white flex justify-center items-center rounded-full">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -193,13 +203,18 @@ function Development() {
                             </svg>
                             </div>
                         </div>
+                        </div>
                     </div>
                 </div>
-                <div className="col-span-1 bg-yellow-300 rounded-lg overflow-hidden transition duration-500 ease-out hover:shadow-lg transform hover:scale-110">
-                    <div className="h-48 overflow-hidden">
-                        <img src={require("../statics/Team-Logger.png")} alt="team-logger-desktop-software" />
+                </a>
+                <a href="https://github.com/gokulcodes/teamBuglogger">
+                <div className="lg:col-span-1 row-span-1 bg-yellow-300 rounded-lg overflow-hidden transition duration-500 ease-out hover:shadow-lg transform hover:scale-110">
+                    <div className="h-full object-cover">
+                        <img className="h-64 w-full" src={require("../statics/Team-Logger.png")} alt="team-logger-desktop-software" />
                     </div>
                     <div className="flex flex-row justify-between  items-center bg-yellow-400 w-full h-20">
+                    <div className="flex flex-row w-full h-full mt-5 justify-between items-center">
+                        <div className="flex items-center">
                         <div className="w-8 h-8 ml-5 mb-5 mr-2 rounded-full overflow-hidden">
                         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="28" height="28" rx="14" fill="url(#paint1_linear)"/>
@@ -221,14 +236,17 @@ function Development() {
                         </svg>
                         </div>
                         <p className="mb-5">Team Logger</p>
+                        </div>
                         <div className="w-12 h-12 mr-5 mb-5 bg-white flex justify-center items-center rounded-full">
                         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M23.3389 4.5H5.16108C4.24369 4.5 3.5 5.25735 3.5 6.19158V18.8084C3.5 19.7427 4.24369 20.5 5.16108 20.5H23.3389C24.2563 20.5 25 19.7427 25 18.8084V6.19158C25 5.25735 24.2563 4.5 23.3389 4.5Z" stroke="#ECC94B" stroke-width="2" stroke-linejoin="round"/>
                             <path d="M2 21H26.5" stroke="#ECC94B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
                         </svg>
                         </div>
-                    </div>
                 </div>
+                </div>
+                </div>
+                </a>
             </div>
         </div>
     </motion.div>
