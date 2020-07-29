@@ -1,4 +1,5 @@
 import React from 'react';
+import {motion} from 'framer-motion'
 import Intro from './screens/Intro'
 import Header from './components/Header'
 import Home from './screens/Home'
@@ -14,23 +15,23 @@ function App() {
     }, 3000)
   })
   return loaded ? <Intro /> : (
-    <div className='flex flex-col font-default overflow-x-hidden text-gray-800 relative border-l-8 border-yellow-400 bg-gray-100' style={{scrollBehavior: 'smooth'}}>
+    <motion.div initial={{opacity: 0}} animate={{ opacity: 1}} transition={{duration: 1, ease: "easeInOut"}}  className='flex flex-col overflow-x-hidden text-gray-800 relative border-l-8 border-yellow-400 bg-gray-100' style={{scrollBehavior: 'smooth'}}>
       <div className="z-40 flex w-screen fixed">
       <Header />
       </div>
       <div className="flex h-screen w-screen justify-center items-center">
       <Home />
       </div>
-      <div>
+      <div id="about">
         <About />
       </div>
-      <div>
+      <div id="skills">
         <Skills />
       </div>
-      <div>
+      <div id="contact">
         <Contact />
       </div>
-    </div>
+    </motion.div>
   );
 }
 

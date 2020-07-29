@@ -8,7 +8,7 @@ function Design() {
         animate={{ opacity: 1, y: 20 }}
         transition={{ ease: "easeOut", duration: 0.6}} 
         className="flex flex-col justify-center items-center w-9/12 pb-64 h-full">
-            <p className="text-lg md:text-xl w-full text-center mb-8">
+            <p className="text-lg md:text-xl w-full text-center mb-8 font-light">
                Good Design is key to every product success. When a product is build with both good Design Principles and Technical Stack, 
                 it always lead to success. I'm experienced to work in top softwares in design industry.
             </p>
@@ -26,8 +26,8 @@ function Design() {
                         </svg>
                         </div>
                         <div className="flex-grow sm:pl-6 mt-6 sm:mt-0 flex flex-col items-center text-center">
-                            <h2 className="font-bold title-font text-gray-900 mb-1 text-xl">UI/UX</h2>
-                            <p className="leading-relaxed">Specialized in  Design Principles, Figma and Adobe XD</p>
+                            <h2 className="font-bold title-font text-gray-900 mb-1 text-xl font-medium">UI/UX</h2>
+                            <p className="leading-relaxed font-light text-lg">Specialized in  Design Principles, Figma and Adobe XD</p>
                         </div>
                     </div>
                 </div>
@@ -40,8 +40,8 @@ function Design() {
                         </svg>
                         </div>
                         <div className="flex-grow sm:pl-6 mt-6 sm:mt-0 text-center">
-                            <h2 className="font-bold title-font text-gray-900 mb-1 text-xl">Graphic Design</h2>
-                            <p className="leading-relaxed">Expertized in Illustrator, InDesign, Photoshop</p>
+                            <h2 className="font-bold title-font text-gray-900 mb-1 text-xl font-medium">Graphic Design</h2>
+                            <p className="leading-relaxed font-light text-lg">Expertized in Illustrator, InDesign, Photoshop</p>
                         </div>
                     </div>
                 </div>
@@ -54,8 +54,8 @@ function Design() {
                     </svg>
                     </div>
                     <div className="flex-grow sm:pl-6 mt-6 sm:mt-0 text-center">
-                    <h2 className="font-bold title-font text-gray-900 mb-1 text-xl">MoGraphs</h2>
-                    <p className="leading-relaxed">Intermediate Knowledge in After Effects, Premiere Pro with Motion Principles</p>
+                    <h2 className="font-bold title-font text-gray-900 mb-1 text-xl font-medium">MoGraphs</h2>
+                    <p className="leading-relaxed font-light text-lg">Intermediate Knowledge in After Effects, Premiere Pro with Motion Principles</p>
                     </div>
                 </div>
                 </div>
@@ -65,36 +65,36 @@ function Design() {
             <div className="grid md:grid-row-2 gap-6 h-full md:h-64">
                 <div className="grid md:grid-cols-4 h-full md:h-64 gap-6 row-span-1 hover:cursor-pointer ">
                     <div className="md:col-span-1 flex items-center justify-center bg-grey-200 rounded-lg overflow-hidden">
-                        <a href="#" className="transitiion duration-500 transform hover:scale-110">
-                        <img className="h-full w-full" src={require("../statics/Ambitious-Homes.png")} alt="ambitious-homes-logo" />
+                        <a href="https://www.behance.net/gallery/94064881/Ambitious-Homes" className="transition duration-500 transform hover:scale-125">
+                        <img className="h-auto" src={require("../statics/Ambitious-Homes.png")} alt="ambitious-homes-logo" />
                         </a>
                     </div>
                     <div className="md:col-span-2 flex  items-center justify-center bg-grey-100 rounded-lg overflow-hidden ">
-                        <a href="https://www.behance.net/gallery/95867027/Give-Life" className="transitiion duration-500 transform hover:scale-110">
+                        <a href="https://www.behance.net/gallery/95867027/Give-Life" className="transition duration-500 transform hover:scale-125">
                             <img className="h-full w-full" src={require("../statics/Give Life.png")} alt="give-life-ngo" />
                         </a>
                     </div>
                     <div className="md:col-span-1 flex items-center justify-center bg-grey-100 rounded-lg overflow-hidden ">
-                        <a href="#" className="transitiion duration-500 transform hover:scale-110">
+                        <a href="https://www.behance.net/gallery/101546817/Perspective-Building?share=1" className="transition duration-500 transform hover:scale-150">
                         <img className="h-full w-full" src={require("../statics/Perspective.png")} alt="cubic-blocks-book-cover" />
                         </a>
                     </div>
                 </div>
                 <div className="grid md:grid-cols-4 h-full md:h-64 gap-6 row-span-1">
                     <div className="md:col-span-1 flex items-center justify-center bg-grey-100 rounded-lg overflow-hidden ">
-                        <a href="#" className="transitiion duration-500 transform hover:scale-110">
+                        <a href="https://www.behance.net/gallery/101546917/Cubic-Blocks?share=1" className="transition duration-500 transform hover:scale-125">
                         <img className="h-full w-full" src={require("../statics/Cubic Blocks.png")} alt="cubic-blocks-book-cover" />
                         </a>
                     </div>
                     <div className="md:col-span-1 bg-grey-100 rounded-lg overflow-hidden ">
-                    <a href="https://www.behance.net/gallery/94196397/Musik" className="transitiion duration-500 transform hover:scale-110">
+                    <a href="https://www.behance.net/gallery/91977943/Motion" className="transition duration-500 transform hover:scale-125">
                         <video className="h-auto md:h-full object-cover" autoPlay muted loop>
                                 <source src={require("../statics/Blue.mp4")} type="video/mp4" />
                         </video>
                     </a>
                     </div>
                     <div className="md:col-span-2 flex items-center justify-center bg-grey-100 rounded-lg overflow-hidden ">
-                    <a href="https://www.behance.net/gallery/91975433/Groot-Logo-Models" className="transitiion duration-500 transform hover:scale-110">
+                    <a href="https://www.behance.net/gallery/91975433/Groot-Logo-Models" className="transition duration-500 transform hover:scale-125">
                         <img  className="h-full w-full" src={require("../statics/Green-Groceries.png")} alt="give-life-ngo" />
                     </a>
                     </div>

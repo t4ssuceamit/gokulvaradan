@@ -17,9 +17,9 @@ const About = () => {
                 </div>
                 <div className="w-1/2 z-0 absolute h-full m-4 border-dashed md:rounded-lg rounded-full overflow-hidden border-2 border-yellow-400"></div>
             </div>
-            <div className="md:col-span-1 flex flex-col md:items-start items-center justify-center">
-                <h1 className="text-2xl md:text-4xl font-bold mt-10 md:mt-10 mb-5">About</h1>    
-                <p className="text-lg md:text-xl w-8/12 text-center md:text-left">I'm Gokul Varadan, a software expert who was willing provide excellent services to the clients out there. I have worked on more projects by integrating with many Individual clients and small scaled business group.  I'm also expert in designing more illustrator works and willing to offer a full package of service.</p>
+            <div className="md:col-span-1 flex flex-col md:items-start md:mb-20 items-center justify-center">
+                <h1 className="text-2xl md:text-4xl font-bold mt-10 md:mt-10 mb-5 font-heavy">About</h1>    
+                <p className="text-lg md:text-xl w-8/12 text-center md:text-left font-light tracking-normal">I'm Gokul Varadan, a software expert who was willing provide excellent services to the clients out there. I have worked on more projects by integrating with many Individual clients and small scaled business group.  I'm also expert in designing more illustrator works and willing to offer a full package of service.</p>
             </div> 
         </div>
     )

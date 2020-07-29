@@ -4,9 +4,9 @@ module.exports = {
     extend: {
       fontFamily: {
         default: ['Poppins'],
-        light: ['FuturaPTLight'],
-        medium: ['FuturaPTMedium'],
-        heavy: ['FuturaPTBold'],
+        light: ['RennerLight'],
+        medium: ['RennerMedium'],
+        heavy: ['RennerBold'],
       }, 
       color: {
         yellow: {

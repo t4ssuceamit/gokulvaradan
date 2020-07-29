@@ -39,22 +39,27 @@ const Contact = () => {
     return (
         <div className="flex flex-col justify-center items-center bg-gray-800 h-full py-16" id="#contact">
             <div className="flex flex-1 flex-col justify-center items-center text-center mb-10">
-                <h1 className="text-2xl md:text-4xl font-bold mb-5 text-white">Let's Get in Touch</h1>
+                <h1 className="text-2xl md:text-4xl font-bold mb-5 text-white font-heavy">Let's Get in Touch</h1>
                 <div className="flex flex-col justify-center items-center mb-5">
                     <input type="email" value={mail} onChange={(e) => handelMail(e)} className="w-64 p-6 h-10 outline-none border-gray-400 focus:border-indigo-500 rounded-lg mb-4" placeholder="email..."/>
                     {info && <p className={success ? "text-green-400 mb-5" : "text-yellow-400 mb-5"}>{info}</p>}
                     <button onClick={() => pushMail()} className="bg-yellow-400 rounded-lg hover:bg-yellow-600 hover:shadow-lg text-black font-bold py-2 px-4">Send</button>
                 </div>
-                <p className="text-white text-center text-lg md:text-xl">You can also Contact me on:{' '}
-                    <a className="font-bold" href="mailto:gokulvaradan2202@gmail.com">gokulvaradan2202@gmail.com</a>
+                <p className="text-white text-center text-lg md:text-xl font-medium">You can also Contact me on:{' '}
+                    <a className="font-bold tracking-wide" href="mailto:gokulvaradan2202@gmail.com">gokulvaradan2202@gmail.com</a>
                 </p>
             </div>
             <div className="flex flex-1 w-screen md:flex-row flex-col justify-between border-t-2 h-20">
                 <div className="container mx-auto flex md:flex-row md:mb-0 flex-col items-center justify-between mt-10">
                 <div className="flex mb-5 md:mb-0">
-                    <p className="text-white text-lg font-bold">Gokul Varadan</p>
+                    <p className="text-white text-lg font-medium">Crafted with ❤ by Gokul</p>
                 </div>
-                <div className='flex flex-row space-x-10 md:space-x-2'>
+                <div className='flex flex-row space-x-5 md:space-x-2'>
+                <a href="https://twitter.com/gokul_varadan">
+                <svg width="32" height="52" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28 0C12.5236 0 0 12.5236 0 28C0 43.4764 12.5236 56 28 56C43.4764 56 56 43.4764 56 28C56 12.5236 43.4764 0 28 0ZM42.1527 22.4C42.1527 22.7055 42.1527 23.0109 42.1527 23.3164C42.1527 32.6836 35.0255 43.3746 22.0946 43.3746C18.1236 43.3746 14.3564 42.2546 11.3018 40.2182C11.8109 40.32 12.4218 40.32 13.0327 40.32C16.2909 40.32 19.3455 39.2 21.7891 37.2655C18.7346 37.1636 16.0873 35.1273 15.1709 32.3782C15.5782 32.48 16.0873 32.48 16.4945 32.48C17.1055 32.48 17.7164 32.3782 18.3273 32.2764C15.0691 31.6655 12.6255 28.8146 12.6255 25.3527V25.2509C13.5418 25.76 14.6618 26.0655 15.7818 26.1673C13.8473 24.9455 12.6255 22.7055 12.6255 20.2618C12.6255 18.9382 12.9309 17.7164 13.5418 16.6982C17.0036 20.9746 22.1964 23.8255 28.1018 24.0291C28 23.52 27.8982 23.0109 27.8982 22.4C27.8982 18.5309 31.0546 15.3745 34.9236 15.3745C36.96 15.3745 38.7927 16.1891 40.1164 17.6145C41.7455 17.3091 43.2727 16.6982 44.5964 15.8836C44.0873 17.5127 42.9673 18.9382 41.5418 19.7527C42.9673 19.5491 44.2909 19.2436 45.6146 18.6327C44.6982 20.16 43.4764 21.3818 42.1527 22.4Z" fill="white"/>
+                </svg>
+                </a> 
                 <a href="https://github.com/gokulcodes">
                     <svg width="32" height="52" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M28 56C43.464 56 56 43.464 56 28C56 12.536 43.464 0 28 0C12.536 0 0 12.536 0 28C0 43.464 12.536 56 28 56Z" fill="white"/>

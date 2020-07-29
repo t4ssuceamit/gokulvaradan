@@ -6052,15 +6052,15 @@ video {
 }
 
 .font-light {
-  font-family: FuturaPTLight;
+  font-family: RennerLight;
 }
 
 .font-medium {
-  font-family: FuturaPTMedium;
+  font-family: RennerMedium;
 }
 
 .font-heavy {
-  font-family: FuturaPTBold;
+  font-family: RennerBold;
 }
 
 .font-hairline {
@@ -14358,9 +14358,23 @@ video {
   transition-delay: 1000ms;
 }
 
-/* @import url('./Fonts/FuturaPTLight.otf.otf');
-@import url('./Fonts/FuturaPTMedium.otf');
-@import url('./Fonts/FuturaPTBold.otf.otf'); */
+@font-face{
+  font-family: "RennerLight";
+
+  src: url("./Fonts/renner-light.otf")
+}
+
+@font-face{
+  font-family: "RennerMedium";
+
+  src: url("./Fonts/renner-medium.otf")
+}
+
+@font-face{
+  font-family: "RennerBold";
+
+  src: url("./Fonts/renner-bold.otf")
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -19840,15 +19854,15 @@ video {
   }
 
   .sm\:font-light {
-    font-family: FuturaPTLight;
+    font-family: RennerLight;
   }
 
   .sm\:font-medium {
-    font-family: FuturaPTMedium;
+    font-family: RennerMedium;
   }
 
   .sm\:font-heavy {
-    font-family: FuturaPTBold;
+    font-family: RennerBold;
   }
 
   .sm\:font-hairline {
@@ -33623,15 +33637,15 @@ video {
   }
 
   .md\:font-light {
-    font-family: FuturaPTLight;
+    font-family: RennerLight;
   }
 
   .md\:font-medium {
-    font-family: FuturaPTMedium;
+    font-family: RennerMedium;
   }
 
   .md\:font-heavy {
-    font-family: FuturaPTBold;
+    font-family: RennerBold;
   }
 
   .md\:font-hairline {
@@ -47406,15 +47420,15 @@ video {
   }
 
   .lg\:font-light {
-    font-family: FuturaPTLight;
+    font-family: RennerLight;
   }
 
   .lg\:font-medium {
-    font-family: FuturaPTMedium;
+    font-family: RennerMedium;
   }
 
   .lg\:font-heavy {
-    font-family: FuturaPTBold;
+    font-family: RennerBold;
   }
 
   .lg\:font-hairline {
@@ -61189,15 +61203,15 @@ video {
   }
 
   .xl\:font-light {
-    font-family: FuturaPTLight;
+    font-family: RennerLight;
   }
 
   .xl\:font-medium {
-    font-family: FuturaPTMedium;
+    font-family: RennerMedium;
   }
 
   .xl\:font-heavy {
-    font-family: FuturaPTBold;
+    font-family: RennerBold;
   }
 
   .xl\:font-hairline {
