@@ -9,8 +9,8 @@ function Design() {
         transition={{ ease: "easeOut", duration: 0.6}} 
         className="flex flex-col justify-center items-center w-9/12 pb-64 h-full">
             <p className="text-lg md:text-xl w-full text-center mb-8 font-light">
-               Good Design is key to every product success. When a product is build with both good Design Principles and Technical Stack, 
-                it always lead to success. I'm experienced to work in top softwares in design industry.
+            Good Design is a key to every product success. When a product is build with both good Design Principles and Technical Stack, it always lead to the success. 
+            I have delightful experience in working with many design softwares. Some of my works are listed below.
             </p>
         <div class="container py-8 mr-10 flex flex-wrap z-0 items-center justify-center flex-col">
             <div className="flex flex-col md:flex-row justify-start items-start">

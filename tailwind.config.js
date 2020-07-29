@@ -3,7 +3,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        default: ['Poppins'],
         light: ['RennerLight'],
         medium: ['RennerMedium'],
         heavy: ['RennerBold'],

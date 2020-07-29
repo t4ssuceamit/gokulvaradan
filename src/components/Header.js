@@ -1,10 +1,12 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react-hooks/exhaustive-deps */
 import React from 'react';
 import HeaderLogo from '../statics/svg/HeaderLogo'
 
 function Header(){
     let dom = null
     React.useEffect(() => {
-        dom= document
+        dom = document
         size()
         window.onresize = () => size()
         function size(){

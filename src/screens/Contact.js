@@ -41,9 +41,9 @@ const Contact = () => {
             <div className="flex flex-1 flex-col justify-center items-center text-center mb-10">
                 <h1 className="text-2xl md:text-4xl font-bold mb-5 text-white font-heavy">Let's Get in Touch</h1>
                 <div className="flex flex-col justify-center items-center mb-5">
-                    <input type="email" value={mail} onChange={(e) => handelMail(e)} className="w-64 p-6 h-10 outline-none border-gray-400 focus:border-indigo-500 rounded-lg mb-4" placeholder="email..."/>
+                    <input className="font-light" type="email" value={mail} onChange={(e) => handelMail(e)} className="w-64 p-6 h-10 outline-none border-gray-400 focus:border-indigo-500 rounded-lg mb-4" placeholder="email..."/>
                     {info && <p className={success ? "text-green-400 mb-5" : "text-yellow-400 mb-5"}>{info}</p>}
-                    <button onClick={() => pushMail()} className="bg-yellow-400 rounded-lg hover:bg-yellow-600 hover:shadow-lg text-black font-bold py-2 px-4">Send</button>
+                    <button onClick={() => pushMail()} className="bg-yellow-400 font-medium rounded-lg hover:bg-yellow-600 hover:shadow-lg text-black font-bold py-2 px-4">Send</button>
                 </div>
                 <p className="text-white text-center text-lg md:text-xl font-medium">You can also Contact me on:{' '}
                     <a className="font-bold tracking-wide" href="mailto:gokulvaradan2202@gmail.com">gokulvaradan2202@gmail.com</a>

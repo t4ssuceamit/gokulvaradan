@@ -9,8 +9,8 @@ function Development() {
     transition={{ ease: "easeOut", duration: 0.6}}
     className="flex flex-col justify-center items-center">
             <p className="text-lg md:text-xl w-4/5 text-center font-light">
-                I'm full stack developer and UI/UX specialist. I'm very passionate about learning new thing and building 
-                new excellent softwares around us. I've experienced by working in project for individuals to small startups.
+            I'm a full stack developer and UI/UX specialist, very passionate about learning new things and building new excellent softwares around us. 
+            I've quite experience by working in Social Projects from individual client to small startups. Some of my works are listed below. Also visit: <a href="https://github.io/gokulcodes">gokulcodes</a> for more development works.
             </p>
             {/* fullstack */}
         <div class="w-9/12 px-5 py-16 mx-auto flex flex-wrap z-0 flex-col">
