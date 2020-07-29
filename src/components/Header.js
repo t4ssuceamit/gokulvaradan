@@ -1,5 +1,4 @@
 import React from 'react';
-// import {motion} from 'framer-motion'
 import HeaderLogo from '../statics/svg/HeaderLogo'
 
 function Header(){

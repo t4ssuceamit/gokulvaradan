@@ -1,19 +1,52 @@
 import React from 'react'
-import {RoughNotation} from  'react-rough-notation'
+import firebaseInit from '../config/firebaseInit'
 
 const Contact = () => {
+    const db = firebaseInit.firestore()
+    const pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+    const [mail, setMail] = React.useState('')
+    const [success, setSuccess] = React.useState(false)
+    const [info, setInfo] = React.useState('')
+    function pushMail(){
+        if(!pattern.test(mail)){
+            setInfo('Mail is Required!')
+            return
+        }
+        db.collection('portfolio-data').add(
+            {
+                mail
+            }
+        ).then(res => {
+            if(res){
+                setMail('')
+                setSuccess(true)
+                setInfo("We'll catch up soon...😊")
+                setTimeout(() => {
+                    setInfo('')
+                }, 3000)
+            }
+        }).catch(err => {
+            setInfo('Sorry, Something went wrong!')
+        })
+    }
+    const handelMail = (e) => {
+        setInfo('Enter a valid Mail ID')
+        setMail(e.target.value)
+        if(pattern.test(mail)){
+            setInfo('')
+        }
+    }
     return (
         <div className="flex flex-col justify-center items-center bg-gray-800 h-full py-16" id="#contact">
             <div className="flex flex-1 flex-col justify-center items-center text-center mb-10">
                 <h1 className="text-2xl md:text-4xl font-bold mb-5 text-white">Let's Get in Touch</h1>
-                <form action="#" method="post" className="flex flex-col justify-center items-center mb-5">
-                    <input className="w-64 p-6 h-10 outline-none border-gray-400 focus:border-indigo-500 rounded-lg mb-4" type="text" placeholder="email..."/>
-                    <button type="submit" className="bg-yellow-400 rounded-lg hover:bg-yellow-600 hover:shadow-lg text-black font-bold py-2 px-4">Send</button>
-                </form>
+                <div className="flex flex-col justify-center items-center mb-5">
+                    <input type="email" value={mail} onChange={(e) => handelMail(e)} className="w-64 p-6 h-10 outline-none border-gray-400 focus:border-indigo-500 rounded-lg mb-4" placeholder="email..."/>
+                    {info && <p className={success ? "text-green-400 mb-5" : "text-yellow-400 mb-5"}>{info}</p>}
+                    <button onClick={() => pushMail()} className="bg-yellow-400 rounded-lg hover:bg-yellow-600 hover:shadow-lg text-black font-bold py-2 px-4">Send</button>
+                </div>
                 <p className="text-white text-center text-lg md:text-xl">You can also Contact me on:{' '}
-                {/* <RoughNotation variants="underline" show="true"> */}
                     <a className="font-bold" href="mailto:gokulvaradan2202@gmail.com">gokulvaradan2202@gmail.com</a>
-                {/* </RoughNotation>  */}
                 </p>
             </div>
             <div className="flex flex-1 w-screen md:flex-row flex-col justify-between border-t-2 h-20">

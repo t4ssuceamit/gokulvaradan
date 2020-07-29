@@ -8,7 +8,6 @@ const SKills = () => {
     const [design, setDesign] = React.useState(false)
     React.useEffect(() => {
         if(development){
-            console.log(document)
             document.getElementById("design").classList.remove('bg-yellow-500', "text-white")
             document.getElementById("dev").classList.add('bg-yellow-500', "text-white")
         }else{

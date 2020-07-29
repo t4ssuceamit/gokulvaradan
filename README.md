@@ -1,2 +1,6 @@
-# gokulvaradan
-Gokul Varadan | Portfolio Website code File. Tech Stack: Reactjs, Tailwindcss, graphqlapi + golang server for email conversation.
+# Gokul Varadan
+Portfolio Website code File. 
+## Tech Stack:
+* Reactjs
+* Tailwindcss
+* Firebase for email storage.

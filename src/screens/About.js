@@ -1,11 +1,11 @@
 import React from 'react';
 
-const images = [
-    require('../statics/Gokul.png'),
-    require('../statics/Gokul-Stage.png'),
-  ];
 
 const About = () => {
+    const images = [
+        require('../statics/Gokul.png'),
+        require('../statics/Gokul-Stage.png'),
+      ];
     return (
         <div className="grid md:grid-cols-2 gap-2 bg-yellow-100 py-32" id="#about">
             <div className="relative flex items-center justify-center md:col-span-1 sm:mb-12 mb-0 rounded-md h-auto md:h-64 lg:h-auto">
