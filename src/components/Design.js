@@ -16,7 +16,7 @@ function Design() {
             <div className="flex flex-col md:flex-row justify-start items-start">
                 <div className="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
                     <div className="flex-grow md:pl-8 pl-6 flex flex-col justify-center items-center self-center">
-                        <div className="flex-shrink-0 mb-5 w-24 ml-6 h-24 bg-grey-100 bg-yellow-200 rounded-full inline-flex items-center justify-center">
+                        <div className="flex-shrink-0 mb-5 w-24 md:ml-6 h-24 bg-grey-100 bg-yellow-200 rounded-full inline-flex items-center justify-center">
                         <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.4646 22.6517H14.828V29.2973C14.8411 29.9261 14.7214 30.5506 14.4765 31.1299C14.2316 31.7092 13.8672 32.2303 13.407 32.659C12.9434 33.1075 12.3946 33.4585 11.793 33.6913C11.1914 33.9241 10.5492 34.034 9.90447 34.0143C9.25932 34.0341 8.61674 33.9244 8.01472 33.6916C7.41271 33.4588 6.86347 33.1077 6.39949 32.659C5.94204 32.229 5.58053 31.7073 5.33859 31.128C5.09666 30.5487 4.97976 29.9249 4.99555 29.2973V22.6517H7.35893V29.2973C7.35058 29.6337 7.41074 29.9684 7.53574 30.2809C7.66075 30.5933 7.84798 30.8771 8.08608 31.115C8.32417 31.3529 8.60815 31.5398 8.92074 31.6645C9.23334 31.7892 9.56803 31.8491 9.90447 31.8404C10.2421 31.8511 10.5784 31.7928 10.8927 31.669C11.207 31.5452 11.4928 31.3585 11.7324 31.1204C11.9721 30.8823 12.1607 30.5979 12.2865 30.2844C12.4124 29.9709 12.473 29.635 12.4646 29.2973V22.6517Z" fill="#ECC94B"/>
                             <path d="M16.3633 33.8079V22.6517H18.7267V33.8079H16.3633Z" fill="#ECC94B"/>
@@ -47,7 +47,7 @@ function Design() {
                 </div>
                 <div className="flex relative pb-20 sm:items-center justify-center md:w-2/3 mx-auto">
                 <div className="flex-grow md:pl-8 pl-6 flex items-center flex-col">
-                    <div className="flex-shrink-0 mb-5 w-24 ml-4 h-24 bg-grey-100 bg-yellow-200 rounded-full inline-flex items-center justify-center">
+                    <div className="flex-shrink-0 mb-5 w-24 md:ml-4 h-24 bg-grey-100 bg-yellow-200 rounded-full inline-flex items-center justify-center">
                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M28 46C37.9411 46 46 37.9411 46 28C46 18.0589 37.9411 10 28 10C18.0589 10 10 18.0589 10 28C10 37.9411 18.0589 46 28 46Z" stroke="#ECC94B" stroke-width="2" stroke-miterlimit="10"/>
                         <path d="M35.8647 28L24.0674 21.1892V34.8108L35.8647 28Z" fill="#ECC94B"/>
