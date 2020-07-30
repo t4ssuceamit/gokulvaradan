@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "53bcb516042338bae2c9bf2c548c53ef",
+    "revision": "39930d54e2aa15ef6d7c67680ddee7b6",
     "url": "/gokulvaradan/index.html"
   },
   {
-    "revision": "9e641cd706796b19dd47",
+    "revision": "5939d9a28467f06a751e",
     "url": "/gokulvaradan/static/css/main.f101be59.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gokulvaradan/static/js/2.733a50f1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9e641cd706796b19dd47",
-    "url": "/gokulvaradan/static/js/main.04ef09f7.chunk.js"
+    "revision": "5939d9a28467f06a751e",
+    "url": "/gokulvaradan/static/js/main.89d54c62.chunk.js"
   },
   {
     "revision": "1b39df1c5efb9e78c921",
