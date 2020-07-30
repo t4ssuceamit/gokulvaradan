@@ -15,7 +15,7 @@ function App() {
     }, 3000)
   })
   return loaded ? <Intro /> : (
-    <motion.div initial={{opacity: 0}} animate={{ opacity: 1}} transition={{duration: 1, ease: "easeInOut"}}  className='flex flex-col overflow-x-hidden text-gray-800 relative border-l-8 border-yellow-400 bg-gray-100' style={{scrollBehavior: 'smooth'}}>
+    <motion.div initial={{opacity: 0}} animate={{ opacity: 1}} transition={{duration: 1, ease: "easeInOut"}}  className='flex flex-col overflow-x-hidden text-gray-900 relative border-l-8 border-yellow-400 bg-gray-100' style={{scrollBehavior: 'smooth'}}>
       <div className="z-40 flex w-screen fixed">
       <Header />
       </div>

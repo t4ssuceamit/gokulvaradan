@@ -11,7 +11,7 @@ const About = () => {
             <div className="relative flex items-center justify-center md:col-span-1 sm:mb-12 mb-0 rounded-md h-auto md:h-64 lg:h-auto">
                 <div className="w-1/2 z-30">
                     <img 
-                        className="md:rounded-lg hover:shadow-md rounded-full overflow-hidden" 
+                        className="md:rounded-lg rounded-full overflow-hidden" 
                         src={images[0]}
                         alt="gokul-varadan-profile" />
                 </div>
