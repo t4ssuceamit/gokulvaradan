@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/gokulvaradan/static/css/main.f101be59.chunk.css",
-    "main.js": "/gokulvaradan/static/js/main.89d54c62.chunk.js",
-    "main.js.map": "/gokulvaradan/static/js/main.89d54c62.chunk.js.map",
+    "main.js": "/gokulvaradan/static/js/main.5e10db0a.chunk.js",
+    "main.js.map": "/gokulvaradan/static/js/main.5e10db0a.chunk.js.map",
     "runtime-main.js": "/gokulvaradan/static/js/runtime-main.be6c11f1.js",
     "runtime-main.js.map": "/gokulvaradan/static/js/runtime-main.be6c11f1.js.map",
-    "static/js/2.733a50f1.chunk.js": "/gokulvaradan/static/js/2.733a50f1.chunk.js",
-    "static/js/2.733a50f1.chunk.js.map": "/gokulvaradan/static/js/2.733a50f1.chunk.js.map",
+    "static/js/2.4906b0ef.chunk.js": "/gokulvaradan/static/js/2.4906b0ef.chunk.js",
+    "static/js/2.4906b0ef.chunk.js.map": "/gokulvaradan/static/js/2.4906b0ef.chunk.js.map",
     "index.html": "/gokulvaradan/index.html",
-    "precache-manifest.244e64517ef20ac81696340fb0c5a9af.js": "/gokulvaradan/precache-manifest.244e64517ef20ac81696340fb0c5a9af.js",
+    "precache-manifest.b851625df5efeb00e6693f06b4bde545.js": "/gokulvaradan/precache-manifest.b851625df5efeb00e6693f06b4bde545.js",
     "service-worker.js": "/gokulvaradan/service-worker.js",
     "static/css/main.f101be59.chunk.css.map": "/gokulvaradan/static/css/main.f101be59.chunk.css.map",
-    "static/js/2.733a50f1.chunk.js.LICENSE.txt": "/gokulvaradan/static/js/2.733a50f1.chunk.js.LICENSE.txt",
+    "static/js/2.4906b0ef.chunk.js.LICENSE.txt": "/gokulvaradan/static/js/2.4906b0ef.chunk.js.LICENSE.txt",
     "static/media/Ambitious-Homes.png": "/gokulvaradan/static/media/Ambitious-Homes.46b77511.png",
     "static/media/Blog.png": "/gokulvaradan/static/media/Blog.86674d03.png",
     "static/media/Blue.mp4": "/gokulvaradan/static/media/Blue.dbc66f2e.mp4",
     "static/media/Cubic Blocks.png": "/gokulvaradan/static/media/Cubic Blocks.ab63afdf.png",
     "static/media/Give Life.png": "/gokulvaradan/static/media/Give Life.94c2c799.png",
-    "static/media/Gokul-Stage.png": "/gokulvaradan/static/media/Gokul-Stage.b0aad8a3.png",
+    "static/media/Gokul-Stage.png": "/gokulvaradan/static/media/Gokul-Stage.714207fb.png",
     "static/media/Gokul.png": "/gokulvaradan/static/media/Gokul.a0bd351c.png",
     "static/media/Green-Groceries.png": "/gokulvaradan/static/media/Green-Groceries.18c90086.png",
     "static/media/Perspective.png": "/gokulvaradan/static/media/Perspective.d65763ac.png",
@@ -27,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.be6c11f1.js",
-    "static/js/2.733a50f1.chunk.js",
+    "static/js/2.4906b0ef.chunk.js",
     "static/css/main.f101be59.chunk.css",
-    "static/js/main.89d54c62.chunk.js"
+    "static/js/main.5e10db0a.chunk.js"
   ]
 }
