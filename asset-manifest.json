@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/gokulvaradan/static/css/main.f101be59.chunk.css",
-    "main.js": "/gokulvaradan/static/js/main.bc04c91a.chunk.js",
-    "main.js.map": "/gokulvaradan/static/js/main.bc04c91a.chunk.js.map",
+    "main.js": "/gokulvaradan/static/js/main.04ef09f7.chunk.js",
+    "main.js.map": "/gokulvaradan/static/js/main.04ef09f7.chunk.js.map",
     "runtime-main.js": "/gokulvaradan/static/js/runtime-main.be6c11f1.js",
     "runtime-main.js.map": "/gokulvaradan/static/js/runtime-main.be6c11f1.js.map",
     "static/js/2.733a50f1.chunk.js": "/gokulvaradan/static/js/2.733a50f1.chunk.js",
     "static/js/2.733a50f1.chunk.js.map": "/gokulvaradan/static/js/2.733a50f1.chunk.js.map",
     "index.html": "/gokulvaradan/index.html",
-    "precache-manifest.741466a912e5f4b73a6e8b920cd5f33f.js": "/gokulvaradan/precache-manifest.741466a912e5f4b73a6e8b920cd5f33f.js",
+    "precache-manifest.6a7f32f97262697d8d278d56fa680869.js": "/gokulvaradan/precache-manifest.6a7f32f97262697d8d278d56fa680869.js",
     "service-worker.js": "/gokulvaradan/service-worker.js",
     "static/css/main.f101be59.chunk.css.map": "/gokulvaradan/static/css/main.f101be59.chunk.css.map",
     "static/js/2.733a50f1.chunk.js.LICENSE.txt": "/gokulvaradan/static/js/2.733a50f1.chunk.js.LICENSE.txt",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.be6c11f1.js",
     "static/js/2.733a50f1.chunk.js",
     "static/css/main.f101be59.chunk.css",
-    "static/js/main.bc04c91a.chunk.js"
+    "static/js/main.04ef09f7.chunk.js"
   ]
 }
