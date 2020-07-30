@@ -24,6 +24,8 @@ const Contact = () => {
                 setTimeout(() => {
                     setInfo('')
                 }, 3000)
+            }else{
+                setInfo("Sorry, Something went wrong!")
             }
         }).catch(err => {
             setInfo('Sorry, Something went wrong!')
