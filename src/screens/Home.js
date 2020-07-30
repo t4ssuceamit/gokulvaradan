@@ -6,6 +6,16 @@ const Home = () => {
     return(
         <div className="flex flex-col justify-center items-center">
         <motion.div 
+         initial={{ opacity: 0, y: 200 }}
+         animate={{ opacity: 1, y: 10 }}
+         transition={{ ease: "easeOut", duration: 0.6}}
+        className="w-16 h-16 flex mb-2 rounded-full bg-yellow-400">
+            <img 
+                className="rounded-full border-2 border-yellow-400 overflow-hidden" 
+                src={require('../statics/Gokul-Stage.png')}
+                alt="gokul-varadan-profile" />
+        </motion.div>
+        <motion.div 
             initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 10 }}
             transition={{ ease: "easeOut", duration: 0.8}}
