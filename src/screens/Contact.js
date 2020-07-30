@@ -10,6 +10,9 @@ const Contact = () => {
     function pushMail(){
         if(!pattern.test(mail)){
             setInfo('Mail is Required!')
+            setTimeout(() => {
+                setInfo('')
+            }, 3000)
             return
         }
         db.collection('portfolio-data').add(

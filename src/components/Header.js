@@ -62,12 +62,12 @@ function Header(){
                     </div>
                 </div>
                 <nav className="md:ml-auto sm:hidden md:block md:mr-auto flex flex-wrap flex-col sm:flex-col md:flex-row items-center text-base justify-center md:space-x-20 transition-all duration-500" id="nav">
-                    <a href="#about" className="mr-5 mb-5 md:mb-0 hover:text-yellow-500 font-medium">About</a>
-                    <a href="#skills" className="mr-5 mb-5 md:mb-0 hover:text-yellow-500 font-medium">Skills</a>
-                    <a href="#contact" className="mr-5 mb-5 md:mb-0 hover:text-yellow-500 font-medium">Contact</a>
+                    <a href="#about" onClick={() => handleClick()} className="mr-5 mb-5 md:mb-0 hover:text-yellow-500 font-medium">About</a>
+                    <a href="#skills" onClick={() => handleClick()} className="mr-5 mb-5 md:mb-0 hover:text-yellow-500 font-medium">Skills</a>
+                    <a href="#contact" onClick={() => handleClick()} className="mr-5 mb-5 md:mb-0 hover:text-yellow-500 font-medium">Contact</a>
                 </nav>
                 <div className="inline-flex sm:hidden md:block items-center border-0 rounded text-base mt-4 md:mt-0 transition-all duration-500" id="talk">
-                    <span className="font-light mr-2">Got an idea</span><button className="font-medium py-2 px-4 rounded-md bg-yellow-400 focus:outline-none font-bold hover:bg-yellow-500"><a href="#contact">Let's Talk!</a></button>
+                    <span className="font-light mr-2">Got an idea</span><button onClick={() => handleClick()} className="font-medium py-2 px-4 rounded-md bg-yellow-400 focus:outline-none font-bold hover:bg-yellow-500"><a href="#contact">Let's Talk!</a></button>
                 </div>
             </div>
         </div>
