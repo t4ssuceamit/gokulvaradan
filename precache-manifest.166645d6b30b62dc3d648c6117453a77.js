@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "197a62ff171592ad37db3c3f7b0537eb",
+    "revision": "432cf14297ab36e6633817b4646d61a5",
     "url": "/gokulvaradan/index.html"
   },
   {
-    "revision": "22dac36bf1d46a999146",
+    "revision": "3da43e7c278e0516befc",
     "url": "/gokulvaradan/static/css/main.f101be59.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gokulvaradan/static/js/2.4906b0ef.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "22dac36bf1d46a999146",
-    "url": "/gokulvaradan/static/js/main.5e10db0a.chunk.js"
+    "revision": "3da43e7c278e0516befc",
+    "url": "/gokulvaradan/static/js/main.0decda30.chunk.js"
   },
   {
     "revision": "1b39df1c5efb9e78c921",
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gokulvaradan/static/media/Ambitious-Homes.46b77511.png"
   },
   {
-    "revision": "86674d030e3421646ac9d21c25e27274",
-    "url": "/gokulvaradan/static/media/Blog.86674d03.png"
+    "revision": "046a43254895a05b849fd42f121b431c",
+    "url": "/gokulvaradan/static/media/Blog.046a4325.png"
   },
   {
     "revision": "dbc66f2ef8e89faeba792c59eb0ae7c4",
