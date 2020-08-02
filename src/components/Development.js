@@ -1,8 +1,11 @@
 import React from 'react'
 import {motion} from 'framer-motion'
+import ProjectScreen from './ProjectScreen'
+import projectData from './projectData'
 
 function Development() {
-    return (
+    const [project, setProject] = React.useState(false)
+    return project ? <ProjectScreen /> : (
     <motion.div 
     initial={{ opacity: 0, y: 100 }}
     animate={{ opacity: 1, y: 20 }}
@@ -134,119 +137,35 @@ function Development() {
             </div>
             </div>
         </div>
+
+
         <div className="flex flex-col h-full justify-center items-center">
             <h1 className="text-3xl mb-6 font-heavy">Projects</h1>
             <div className="grid lg:grid-cols-3 grid-row-3 gap-8 bg-grey-100 w-3/4 md:w-1/2 lg:w-3/4 h-full">
-                <a href="https://github.com/gokulcodes/blogin#react-native">
+            {projectData.map((project) => (
+                <a href={project.projectUrl}>
                 <div className="lg:col-span-1 row-span-1 bg-yellow-300 rounded-lg object-cover overflow-hidden transition duration-500 ease-out hover:shadow-lg transform hover:scale-110">
                     <div className="h-auto object-cover">
-                        <img className="h-64 w-full" src={require("../statics/Blog.png")} alt="react-native-blog-app" />
+                        <img className="h-64 w-full" src={project.img} alt={project.alt} />
                     </div>
                     <div className="flex flex-row justify-between items-center bg-yellow-400 w-full h-20">
                         <div className="flex flex-row w-full h-full mt-5 justify-between items-center">
                         <div className="flex items-center">
                         <div className="w-8 h-8 ml-5 mb-5 mr-2 rounded-full overflow-hidden">
-                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="28" height="28" rx="14" fill="url(#paint0_linear)"/>
-                                <path d="M14.572 19C15.454 19 16.182 18.748 16.784 18.23C17.386 17.712 17.68 17.054 17.68 16.284C17.68 15.318 17.26 14.576 16.406 14.044C16.994 13.554 17.288 12.924 17.288 12.154C17.288 11.412 17.008 10.796 16.434 10.306C15.86 9.802 15.16 9.55 14.306 9.55H9.7V19H14.572ZM14.558 15.038C15.132 15.038 15.594 15.5 15.594 16.102C15.594 16.704 15.132 17.166 14.558 17.166H11.702V15.038H14.558ZM14.278 11.398C14.824 11.398 15.216 11.79 15.216 12.336C15.216 12.406 15.216 12.448 15.202 12.476C15.146 12.966 14.768 13.288 14.278 13.288H11.702V11.398H14.278Z" fill="white"/>
-                                <defs>
-                                <linearGradient id="paint0_linear" x1="5" y1="2.5" x2="22.5" y2="25.5" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#FDAE66"/>
-                                <stop offset="1" stop-color="#FB7756"/>
-                                </linearGradient>
-                                </defs>
-                            </svg>
+                            {project.icon}
                         </div>
-                        <p className="mb-5 font-medium">Blogin</p>
+                        <p className="mb-5 font-medium">{project.projectName}</p>
                         </div>
                         <div className="flex justify-center items-center">
                             <div className="w-12 h-12 mr-5 mb-5 bg-white flex justify-center items-center rounded-full">
-                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M23.5 10C23.1022 10 22.7206 10.1603 22.4393 10.4457C22.158 10.7311 22 11.1181 22 11.5217V18.4783C22 18.8819 22.158 19.2689 22.4393 19.5543C22.7206 19.8397 23.1022 20 23.5 20C23.8978 20 24.2794 19.8397 24.5607 19.5543C24.842 19.2689 25 18.8819 25 18.4783V11.5217C25 11.1181 24.842 10.7311 24.5607 10.4457C24.2794 10.1603 23.8978 10 23.5 10V10Z" fill="#ECC94B"/>
-                                <path d="M4.5 10C4.10218 10 3.72064 10.1603 3.43934 10.4457C3.15804 10.7311 3 11.1181 3 11.5217V18.4783C3 18.8819 3.15804 19.2689 3.43934 19.5543C3.72064 19.8397 4.10218 20 4.5 20C4.89782 20 5.27936 19.8397 5.56066 19.5543C5.84196 19.2689 6 18.8819 6 18.4783V11.5217C6 11.1181 5.84196 10.7311 5.56066 10.4457C5.27936 10.1603 4.89782 10 4.5 10V10Z" fill="#ECC94B"/>
-                                <path d="M6.5 10V19.9C6.5 20.3376 6.67879 20.7573 6.99703 21.0667C7.31527 21.3762 7.74691 21.55 8.19697 21.55H9.25758V25.0562C9.25758 25.4392 9.41401 25.8064 9.69248 26.0771C9.97094 26.3479 10.3486 26.5 10.7424 26.5C11.1362 26.5 11.5139 26.3479 11.7924 26.0771C12.0708 25.8064 12.2273 25.4392 12.2273 25.0562V21.55H14.7727V25.0562C14.7727 25.4392 14.9292 25.8064 15.2076 26.0771C15.4861 26.3479 15.8638 26.5 16.2576 26.5C16.6514 26.5 17.0291 26.3479 17.3075 26.0771C17.586 25.8064 17.7424 25.4392 17.7424 25.0562V21.55H18.803C19.2531 21.55 19.6847 21.3762 20.003 21.0667C20.3212 20.7573 20.5 20.3376 20.5 19.9V10H6.5Z" fill="#ECC94B"/>
-                                <path d="M20.3026 8.16806C19.8665 6.54049 18.8276 5.15021 17.4258 4.23557C17.3473 4.18445 17.2677 4.13481 17.187 4.08665C17.1064 4.03849 17.0254 3.99126 16.944 3.94495L17.2136 3.4404L18.0567 1.84785C18.0709 1.82094 18.08 1.79134 18.0833 1.76075C18.0866 1.73017 18.0841 1.6992 18.076 1.66962C18.0679 1.64004 18.0542 1.61244 18.0359 1.58838C18.0175 1.56433 17.9949 1.5443 17.9691 1.52945C17.9367 1.51039 17.9002 1.50025 17.863 1.5C17.823 1.49993 17.7838 1.51108 17.7494 1.53228C17.7149 1.55349 17.6866 1.58398 17.6672 1.62058L16.813 3.23481L16.5434 3.74325C16.4585 3.70379 16.3726 3.66656 16.2856 3.63211C16.1986 3.59766 16.1115 3.56154 16.0229 3.52876C14.3918 2.92763 12.6135 2.92763 10.9824 3.52876C10.8939 3.56173 10.8064 3.59618 10.7197 3.63211C10.6327 3.66879 10.5468 3.70602 10.4619 3.74325L10.1923 3.23481L9.3381 1.62336C9.30854 1.57054 9.26044 1.53193 9.20406 1.51576C9.14769 1.49959 9.08751 1.50715 9.03638 1.53682C8.98526 1.56649 8.94724 1.61593 8.93045 1.67456C8.91366 1.7332 8.91943 1.79639 8.94652 1.85063L9.78538 3.4404L10.0549 3.94495C9.9725 3.99015 9.89114 4.03664 9.81085 4.08443C9.73055 4.13222 9.65132 4.1826 9.57314 4.23557C8.1724 5.15021 7.13246 6.54049 6.69738 8.16639C6.57706 8.60018 6.51072 9.04842 6.5 9.5H20.5C20.4891 9.04898 20.4228 8.60131 20.3026 8.16806V8.16806ZM10.316 7.27898C10.19 7.27898 10.0669 7.23987 9.96223 7.16661C9.85753 7.09334 9.77592 6.98919 9.72773 6.86735C9.67954 6.74551 9.66693 6.61144 9.6915 6.48209C9.71606 6.35274 9.7767 6.23393 9.86575 6.14067C9.95479 6.04742 10.0682 5.98391 10.1917 5.95818C10.3153 5.93245 10.4433 5.94566 10.5596 5.99613C10.676 6.0466 10.7754 6.13206 10.8454 6.24172C10.9153 6.35137 10.9527 6.48029 10.9527 6.61218C10.9527 6.78902 10.8856 6.95863 10.7662 7.08368C10.6468 7.20873 10.4848 7.27898 10.316 7.27898ZM16.683 7.27898C16.557 7.27898 16.4339 7.23987 16.3292 7.16661C16.2245 7.09334 16.1429 6.98919 16.0947 6.86735C16.0466 6.74551 16.0339 6.61144 16.0585 6.48209C16.0831 6.35274 16.1437 6.23393 16.2328 6.14067C16.3218 6.04742 16.4353 5.98391 16.5588 5.95818C16.6823 5.93245 16.8103 5.94566 16.9266 5.99613C17.043 6.0466 17.1424 6.13206 17.2124 6.24172C17.2823 6.35137 17.3197 6.48029 17.3197 6.61218C17.3197 6.78902 17.2526 6.95863 17.1332 7.08368C17.0138 7.20873 16.8518 7.27898 16.683 7.27898Z" fill="#ECC94B"/>
-                            </svg>
-                            </div>
-                            <div className="w-12 h-12 mr-5 mb-5 bg-white flex justify-center items-center rounded-full">
-                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.61855 20.2991H3.72726V11.4304H1.61855V20.2991V20.2991ZM2.66868 10.2674C3.32924 10.2674 3.84583 9.76536 3.84583 9.13787C3.84583 8.50199 3.32924 8 2.66868 8C2.01659 8 1.5 8.50201 1.5 9.13787C1.5 9.76538 2.01659 10.2674 2.66868 10.2674ZM10.7481 8.02504C7.18286 8.02504 4.94701 10.4263 4.94701 14.2667C4.94701 18.1071 7.18264 20.5 10.7481 20.5C14.3049 20.5 16.5408 18.1071 16.5408 14.2667C16.5408 10.4263 14.3051 8.02504 10.7481 8.02504V8.02504ZM10.7481 9.86573C12.9246 9.86573 14.3134 11.5726 14.3134 14.2667C14.3134 16.9524 12.9245 18.6592 10.7481 18.6592C8.56322 18.6592 7.18286 16.9524 7.18286 14.2667C7.18286 11.5726 8.56326 9.86573 10.7481 9.86573ZM17.4303 16.9022C17.5234 19.1279 19.3696 20.5 22.1812 20.5C25.1368 20.5 27 19.0609 27 16.7684C27 14.9695 25.9499 13.9572 23.4686 13.3966L22.0628 13.0787C20.5638 12.7273 19.9456 12.2587 19.9456 11.4555C19.9456 10.4515 20.8771 9.7822 22.2575 9.7822C23.6549 9.7822 24.6117 10.4599 24.7134 11.5894H26.7967C26.7459 9.46425 24.9675 8.0251 22.2745 8.0251C19.6153 8.0251 17.7267 9.47254 17.7267 11.6145C17.7267 13.338 18.7938 14.409 21.0464 14.9194L22.63 15.2875C24.1713 15.6473 24.798 16.1493 24.798 17.0194C24.798 18.0234 23.7733 18.743 22.2998 18.743C20.8093 18.743 19.6831 18.0151 19.5476 16.9023H17.4304L17.4303 16.9022Z" fill="#ECC94B"/>
-                            </svg>
+                            {project.platform}
                             </div>
                         </div>
                         </div>
                     </div>
                 </div>
-                </a> 
-                <a href="https://github.com/gokulcodes/infomatte#infomatte">
-                <div className="lg:col-span-1 row-span-1 bg-yellow-300 rounded-lg overflow-hidden transition duration-500 ease-out hover:shadow-lg transform hover:scale-110">
-                    <div className="h-auto object-cover">
-                        <img  className="h-64 w-full"  src={require("../statics/dev-infomatte.jpg")} alt="dev-infomatte" />
-                    </div>
-                    <div className="flex flex-row justify-between  items-center bg-yellow-400 w-full h-20">
-                    <div className="flex flex-row w-full h-full mt-5 justify-between items-center">
-                        <div className="flex items-center">
-                        <div className="w-8 h-8 ml-5 mb-5 mr-2 rounded-full overflow-hidden">
-                            <img src="https://avatars2.githubusercontent.com/u/60610891?s=460&u=ba9bbe6fddfbf4ce9a37cfc8bd40d7dde3cee537&v=4" alt="dev-infomatte" />
-                        </div>
-                        <p className="mb-5 font-medium">Infomatte.in</p>
-                        </div>
-                        <div className="flex justify-center items-center">
-                            <div className="w-12 h-12 mr-5 mb-5 bg-white flex justify-center items-center rounded-full">
-                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14 1C21.1794 1 27 6.82062 27 14C27 21.1794 21.1794 27 14 27C6.82062 27 1 21.1794 1 14C1 6.82062 6.82062 1 14 1Z" stroke="#ECC94B" stroke-miterlimit="10"/>
-                                <path d="M14 1C17.6078 1 21 6.82062 21 14C21 21.1794 17.6078 27 14 27C10.3922 27 7 21.1794 7 14C7 6.82062 10.3922 1 14 1Z" stroke="#ECC94B" stroke-miterlimit="10"/>
-                                <path d="M23 5C20.5181 6.87933 17.3937 8 14 8C10.6063 8 7.48186 6.87933 5 5" stroke="#ECC94B" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M5 23C7.48186 21.7471 10.6063 21 14 21C17.3937 21 20.5181 21.7471 23 23" stroke="#ECC94B" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M14 1V27" stroke="#ECC94B" stroke-miterlimit="10"/>
-                                <path d="M1 14H27" stroke="#ECC94B" stroke-miterlimit="10"/>
-                            </svg>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                </a>
-                <a href="https://github.com/gokulcodes/teamBuglogger">
-                <div className="lg:col-span-1 row-span-1 bg-yellow-300 rounded-lg overflow-hidden transition duration-500 ease-out hover:shadow-lg transform hover:scale-110">
-                    <div className="h-full object-cover">
-                        <img className="h-64 w-full" src={require("../statics/Team-Logger.png")} alt="team-logger-desktop-software" />
-                    </div>
-                    <div className="flex flex-row justify-between  items-center bg-yellow-400 w-full h-20">
-                    <div className="flex flex-row w-full h-full mt-5 justify-between items-center">
-                        <div className="flex items-center">
-                        <div className="w-8 h-8 ml-5 mb-5 mr-2 rounded-full overflow-hidden">
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="28" height="28" rx="14" fill="url(#paint1_linear)"/>
-                            <path d="M17.8364 18.106C18.8087 18.8975 19.3845 19.6564 19.3845 21.0002" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M10.1636 18.106C9.1913 18.8975 8.61548 19.6561 8.61548 21.0002" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M18.3076 12.3846C19.2799 11.593 19.3845 10.4976 19.3845 9.15381" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M9.6924 12.3173C8.72014 11.5257 8.61548 10.4979 8.61548 9.15381" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M20.9999 15.0815H18.3076" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M9.69231 15.0815H7" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M14 11.8462V20.4616" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M14.0001 20.4615C11.6308 20.4615 9.69238 18.5231 9.69238 16.1538V12.9207C9.69238 10.7309 11.6308 9.68994 14.0001 9.68994C16.3693 9.68994 18.3078 10.5515 18.3078 12.9207V16.1538C18.3078 18.5231 16.3693 20.4615 14.0001 20.4615Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M11.423 10.2146C11.3557 10.0457 11.3167 9.86685 11.3076 9.68524C11.3095 8.97364 11.593 8.29173 12.0962 7.78855C12.5993 7.28537 13.2813 7.00187 13.9929 7H14.007C14.7186 7.00187 15.4005 7.28537 15.9037 7.78855C16.4069 8.29173 16.6904 8.97364 16.6922 9.68524C16.6857 9.85057 16.6502 10.0135 16.5872 10.1665" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                            <defs>
-                            <linearGradient id="paint1_linear" x1="5" y1="2.5" x2="22.5" y2="25.5" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#06FF40"/>
-                            <stop offset="1" stop-color="#00C868"/>
-                            </linearGradient>
-                            </defs>
-                        </svg>
-                        </div>
-                        <p className="mb-5 font-medium">Team Logger</p>
-                        </div>
-                        <div className="w-12 h-12 mr-5 mb-5 bg-white flex justify-center items-center rounded-full">
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M23.3389 4.5H5.16108C4.24369 4.5 3.5 5.25735 3.5 6.19158V18.8084C3.5 19.7427 4.24369 20.5 5.16108 20.5H23.3389C24.2563 20.5 25 19.7427 25 18.8084V6.19158C25 5.25735 24.2563 4.5 23.3389 4.5Z" stroke="#ECC94B" stroke-width="2" stroke-linejoin="round"/>
-                            <path d="M2 21H26.5" stroke="#ECC94B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
-                        </svg>
-                        </div>
-                </div>
-                </div>
-                </div>
-                </a>
+                </a>               
+            ))}
             </div>
         </div>
     </motion.div>
