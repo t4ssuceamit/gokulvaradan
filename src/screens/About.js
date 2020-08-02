@@ -20,8 +20,8 @@ const About = () => {
             <div className="md:col-span-1 flex flex-col md:items-start md:mb-20 items-center justify-center">
                 <h1 className="text-2xl md:text-4xl font-bold mt-10 md:mt-10 mb-5 font-heavy">About</h1>    
                 <p className="text-lg md:text-xl w-8/12 text-center md:text-left font-light tracking-normal">
-                I'm from India, pursuing bachelor of engineering in computer science II year, a software and design skilled person, willing to provide excellent service to the clients out there. 
-                I have worked on more projects by integrating with many Individual clients and small scaled business group. 
+                I'm from India, pursuing bachelor of engineering second year in computer science, a software and design skilled person, looking for internship programs and also willing to provide excellent service to the clients out there. 
+                I've worked on many projects by integrating with many Individual clients and small scaled business group. 
                 I'm also expert in designing more illustration works and willing to offer a full package of service. Check out <a href="https://www.behance.net/designgamuts" className="text-yellow-600">designgamuts</a> for reference.</p>
             </div> 
         </div>
