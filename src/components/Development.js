@@ -1,11 +1,9 @@
 import React from 'react'
 import {motion} from 'framer-motion'
-import ProjectScreen from './ProjectScreen'
 import projectData from './projectData'
 
 function Development() {
-    const [project, setProject] = React.useState(false)
-    return project ? <ProjectScreen /> : (
+    return (
     <motion.div 
     initial={{ opacity: 0, y: 100 }}
     animate={{ opacity: 1, y: 20 }}
@@ -141,7 +139,7 @@ function Development() {
 
         <div className="flex flex-col h-full justify-center items-center">
             <h1 className="text-3xl mb-6 font-heavy">Projects</h1>
-            <div className="grid lg:grid-cols-3 grid-row-3 gap-8 bg-grey-100 w-3/4 md:w-1/2 lg:w-3/4 h-full">
+            <div className="grid lg:grid-cols-3 grid-row-3 gap-8 bg-grey-100 w-3/4 md:w-1/2 lg:w-4/5 h-full">
             {projectData.map((project) => (
                 <a href={project.projectUrl}>
                 <div className="lg:col-span-1 row-span-1 bg-yellow-300 rounded-lg object-cover overflow-hidden transition duration-500 ease-out hover:shadow-lg transform hover:scale-110">
