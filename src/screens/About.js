@@ -22,7 +22,7 @@ const About = () => {
                 I'm also expert in designing more illustration works and willing to offer a full package of service. Check out <a href="https://www.behance.net/designgamuts" className="text-yellow-600">designgamuts</a> for reference.</p>
                 <p className="font-light mb-2 text-gray-700 flex flex-col">Download my Resume
                 <button className="flex bg-yellow-400 mt-2 font-medium rounded-lg hover:bg-yellow-600 hover:shadow-lg text-black font-bold py-3 px-4">
-                    <a href="../statics/Gokul-Varadan-Resume.pdf" className="flex ml-2" download>Download<svg className="ml-2  w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
+                    <a href="https://github.com/gokulcodes/gokulvaradan/raw/master/src/statics/Gokul-Varadan-Resume.pdf" className="flex ml-2" download>Download<svg className="ml-2  w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
                 </button>
                 </p>
             </div>
