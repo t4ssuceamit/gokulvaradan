@@ -24,7 +24,7 @@ const SKills = () => {
         setDesign(true)
     }
     return (
-        <div className="flex flex-col justify-center items-center py-24">
+        <div className="flex flex-col justify-center items-center py-24 bg-gray-100 ">
             <h1 className="text-2xl md:text-4xl mb-2 font-heavy">Skills</h1>
             <p className="text-lg md:text-xl text-center mb-4 font-light">Demonstration of my skills with Real Clients</p>
             <div className="flex mx-auto border-2 border-yellow-500 rounded-full overflow-hidden mt-6 mb-10 transform sm:scale-110 hover:scale-120">

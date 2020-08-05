@@ -17,3 +17,8 @@
     font-family: "RennerBold";
     src: url("./Fonts/renner-bold.otf")
 }
+
+.pattern {
+    background: linear-gradient(90deg, #fff 21px, transparent 1%) center, linear-gradient(#fff 21px, transparent 1%) center, #1a202c;
+    background-size: 22px 22px;
+}

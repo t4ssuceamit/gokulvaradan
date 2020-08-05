@@ -23,9 +23,10 @@ function Header(){
         window.onscroll = function() {scrollFunction()};
         function scrollFunction() {
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            document.getElementById("header").classList.add('shadow-md')
+            document.getElementById("header").classList.add('shadow-md', 'bg-white')
         } else {
             document.getElementById("header").classList.remove('shadow-md')
+            document.getElementById("header").classList.replace('bg-white', 'bg-transparent')
         }
         }
     }, [])
@@ -47,7 +48,7 @@ function Header(){
         }
     }
     return (
-        <div className="flex flex-1 h-full flex-wrap flex-row items-center z-40 bg-white transition-all duration-500" id="header">
+        <div className="flex flex-1 h-full flex-wrap flex-row items-center z-40 bg-transparent transition-all duration-500" id="header">
             <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                 <div className="flex w-full md:w-auto justify-between font-medium items-center text-gray-900 mb-4 md:mb-0">
                     <div className="flex">
