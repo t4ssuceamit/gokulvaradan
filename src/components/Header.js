@@ -38,7 +38,7 @@ function Header(){
             talk.classList.remove("hidden")
             nav.classList.add("block")
             talk.classList.add("block")
-            document.getElementById("header").classList.add('shadow-md')
+            document.getElementById("header").classList.add('shadow-md', 'bg-white')
         }else{
             nav.classList.remove("block")
             talk.classList.remove("block")
