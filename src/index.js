@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './assets/main.css';
 import App from './App';
 // import swDev from './swDev'
+import * as serviceWorker from './serviceWorker'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,3 +16,4 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 // swDev()
+serviceWorker.register()
