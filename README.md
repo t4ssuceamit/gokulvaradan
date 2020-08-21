@@ -1,6 +1,6 @@
 # Gokul Varadan
 Portfolio Website code File. 
 ## Tech Stack:
-* Reactjs
+* Reactjs + PWA
 * Tailwindcss
-* Firebase for email storage.
+* Email storage
