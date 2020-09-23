@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/gokulvaradan/static/css/main.9faa2468.chunk.css",
-    "main.js": "/gokulvaradan/static/js/main.1a242675.chunk.js",
-    "main.js.map": "/gokulvaradan/static/js/main.1a242675.chunk.js.map",
+    "main.css": "/gokulvaradan/static/css/main.8fd15cc2.chunk.css",
+    "main.js": "/gokulvaradan/static/js/main.0bad9bbf.chunk.js",
+    "main.js.map": "/gokulvaradan/static/js/main.0bad9bbf.chunk.js.map",
     "runtime-main.js": "/gokulvaradan/static/js/runtime-main.be6c11f1.js",
     "runtime-main.js.map": "/gokulvaradan/static/js/runtime-main.be6c11f1.js.map",
     "static/js/2.e2b4cbee.chunk.js": "/gokulvaradan/static/js/2.e2b4cbee.chunk.js",
     "static/js/2.e2b4cbee.chunk.js.map": "/gokulvaradan/static/js/2.e2b4cbee.chunk.js.map",
     "index.html": "/gokulvaradan/index.html",
-    "precache-manifest.5d3e474976180bcf8ff5c60e0d48b9a1.js": "/gokulvaradan/precache-manifest.5d3e474976180bcf8ff5c60e0d48b9a1.js",
+    "precache-manifest.e263decb83e4e03ee730301511fa1859.js": "/gokulvaradan/precache-manifest.e263decb83e4e03ee730301511fa1859.js",
     "service-worker.js": "/gokulvaradan/service-worker.js",
-    "static/css/main.9faa2468.chunk.css.map": "/gokulvaradan/static/css/main.9faa2468.chunk.css.map",
+    "static/css/main.8fd15cc2.chunk.css.map": "/gokulvaradan/static/css/main.8fd15cc2.chunk.css.map",
     "static/js/2.e2b4cbee.chunk.js.LICENSE.txt": "/gokulvaradan/static/js/2.e2b4cbee.chunk.js.LICENSE.txt",
     "static/media/Ambitious-Homes.png": "/gokulvaradan/static/media/Ambitious-Homes.46b77511.png",
     "static/media/Blog.png": "/gokulvaradan/static/media/Blog.c7aaf461.png",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.be6c11f1.js",
     "static/js/2.e2b4cbee.chunk.js",
-    "static/css/main.9faa2468.chunk.css",
-    "static/js/main.1a242675.chunk.js"
+    "static/css/main.8fd15cc2.chunk.css",
+    "static/js/main.0bad9bbf.chunk.js"
   ]
 }
